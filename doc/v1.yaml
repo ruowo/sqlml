@@ -1,0 +1,49 @@
+sqlml: 1
+package: com.sqlml.v1
+title: 某某服务
+
+groups:
+  - name: user
+    title: 用户模块
+
+sqls:
+  - name: getUserNameById
+    group: user
+    title: 获取用户名
+    sql: select userName from user where id = ?
+    input: 
+      - type: int
+        name: id
+        text: 用户ID
+    output:
+      - type: string
+        name: userName
+        text: 用户名
+  - name: getUserInfoById
+    group: user
+    tilte: 获取用户信息
+    sql: select sex, age from user where id = :id
+    input: 
+      - type: int
+        name: id
+        text: 用户ID
+    output:
+      - type: int
+        name: sex
+        text: 性别
+      - type: int
+        name: age
+        text: 年龄
+    examples: # 测试用例
+      - text: 测试1
+        input:
+          id: 2
+      - text: 测试2
+        input:
+          id: 3
+
+    createdBy: 张三 # 生产者
+    updateAt: 2018-10-24 23:28:25 # 更新时间
+    checkedBy: 李四 # 验证者
+    checkAt: 2018-10-24 23:29:03 # 验证时间
+    acceptAt: 2018-10-24 23:47:41 # 确认时间

@@ -1,0 +1,22 @@
+{
+  "name": "sqlml",
+  "version": "1.0.0",
+  "description": "sql build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savml/sqlml.git"
+  },
+  "author": {
+    "name": "jetiny",
+    "email": "86287344@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/savml/sqlml/issues"
+  },
+  "homepage": "https://github.com/savml/sqlml#readme"
+}
