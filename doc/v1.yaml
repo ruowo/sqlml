@@ -1,6 +1,11 @@
 sqlml: 1
 package: com.sqlml.v1
+
+# meta 信息
 title: 某某服务
+createdBy: 张三
+createdAt: 2018-10-25 08:38:50
+updateAt: 2018-10-24 23:28:25 # 更新时间
 
 groups:
   - name: user
